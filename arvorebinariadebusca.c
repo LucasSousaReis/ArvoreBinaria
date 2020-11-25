@@ -29,24 +29,25 @@ struct node* novoNo(int x){
     tmp->direita = tmp->esquerda = NULL;
     return tmp;
 }
-node root = NULL;
+node raiz = NULL;
 
-struct node* insere(struct  node* root, int x){
+struct node* insere(struct  node* raiz, int x){
 
-    if(root == NULL){
+    if(raiz == NULL){
         return novoNo(x);
     }
-    if (x < root->info){
-        root->esquerda = insert(root->esquerda, x);
+    if (x < raiz->info){
+        raiz->esquerda = insert(raiz->esquerda, x);
     }
-    else if (x > root->info){
-        root->direita = insert(root->direita,x)
+    else if (x > raiz->info){
+        raiz->direita = insert(raiz->direita,x)
     }
-    return root;
+    return raiz;
 }
-int numero_de_nos(){
+int numero_de_nos(struct node*raiz){
+    
+}
 
-}
 int numero_de_nos_folha(node raiz){
 
 
@@ -69,7 +70,7 @@ int emordem(){
 
 }
 int posordem(){
-    
+
 }
 int altura(){
 
